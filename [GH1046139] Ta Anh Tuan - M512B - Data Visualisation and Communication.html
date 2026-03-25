@@ -8372,7 +8372,7 @@ Mean ADR (clipped): 101.46
 <span class="n">yr</span> <span class="o">=</span> <span class="n">ymax</span> <span class="o">-</span> <span class="n">ymin</span>
 <span class="n">label_off</span> <span class="o">=</span> <span class="n">yr</span> <span class="o">*</span> <span class="mf">0.035</span>
 
-<span class="c1"># Median labels (small, above the box, with clean white box)</span>
+<span class="c1"># Median labels</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span>
     <span class="mi">1</span><span class="p">,</span> <span class="n">city_med</span> <span class="o">+</span> <span class="n">label_off</span><span class="p">,</span>
     <span class="sa">f</span><span class="s2">"Median ≈ </span><span class="si">{</span><span class="n">city_med</span><span class="si">:</span><span class="s2">.0f</span><span class="si">}</span><span class="s2">€"</span><span class="p">,</span>
@@ -8768,7 +8768,7 @@ Mean ADR (clipped): 101.46
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Insight-4B:-Dumbbell-chart-%E2%80%94-fix-top-overlap-by-moving-comparison-note-to-bottom">Insight 4B: Dumbbell chart — fix top overlap by moving comparison note to bottom<a class="anchor-link" href="#Insight-4B:-Dumbbell-chart-%E2%80%94-fix-top-overlap-by-moving-comparison-note-to-bottom">¶</a></h3>
+<h3 id="Insight-4B:-Dumbbell-chart-%E2%80%94-City-vs-Resort-cancellation-risk-by-lead-time-bin">Insight 4B: Dumbbell chart — City vs Resort cancellation risk by lead-time bin<a class="anchor-link" href="#Insight-4B:-Dumbbell-chart-%E2%80%94-City-vs-Resort-cancellation-risk-by-lead-time-bin">¶</a></h3>
 </div>
 </div>
 </div>
@@ -8940,7 +8940,6 @@ Mean ADR (clipped): 101.46
 <span class="n">xmax</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">rate</span><span class="p">[</span><span class="s2">"City"</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">(),</span> <span class="n">rate</span><span class="p">[</span><span class="s2">"Resort"</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">xmax</span> <span class="o">+</span> <span class="mi">18</span><span class="p">)</span>
 
-<span class="c1"># --- Move comparison note to bottom in same gray tone as source ---</span>
 <span class="n">avg_gap</span> <span class="o">=</span> <span class="n">rate</span><span class="p">[</span><span class="s2">"gap"</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 <span class="n">fig</span><span class="o">.</span><span class="n">text</span><span class="p">(</span>
     <span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.055</span><span class="p">,</span>
